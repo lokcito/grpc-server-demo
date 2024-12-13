@@ -25,7 +25,7 @@ def serve():
     port = int(os.environ.get('PORT', '50051'))  # Default to 50051 if not set
     server.add_insecure_port(f'[::]:{port}')
     server.start()
-    print("Running")
+    print(f"Running at {port}")
     server.wait_for_termination()
 
 
